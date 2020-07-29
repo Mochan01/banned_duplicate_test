@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  hoge
+  <%= process.env.NODE_ENV === "development" ? process.env.DEV : process.env.PROD %>
   <img src="./img/sample.jpg" alt="">
 </body>
 </html>
