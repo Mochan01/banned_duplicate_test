@@ -6,7 +6,11 @@ require("laravel-mix-ejs")
 
 mix.ts("./script/index.ts", "./dist/js/")
 .sass("./sass/index.scss", "./dist/css/")
-.ejs("./ejs/index.ejs", "./dist/")
+.ejs("./template/index.ejs", "./dist/")
+.copyDirectory('./img', './dist/img')
+.options({
+  processCssUrls: false
+})
 .autoload({
   "jquery": ['$', 'window.jQuery'],
 })
