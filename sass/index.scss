@@ -1,3 +1,11 @@
-* {
-  color: red;
+#hoge3 {
+  width: 259px;
+  padding-top: 194px;
+  background-color: red;
+  background-image: url("../img/sample_css_background.jpg");
+}
+
+#hoge1, #hoge2, #hoge3 {
+  user-select: none;
+  pointer-events: none;
 }

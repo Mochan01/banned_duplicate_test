@@ -8,7 +8,12 @@
   <title>Document</title>
 </head>
 <body>
-  <%= process.env.NODE_ENV === "development" ? process.env.DEV : process.env.PROD %>
-  <img src="./img/sample.jpg" alt="">
+  <p>テキストは複製できる、画像は複製できないはずです ↓</p>
+  <h1>imgタグ</h2>
+  <img id="hoge1" src="./img/sample_img_tag.jpg" alt="" />
+  <h1>canvas</h2>
+  <canvas id="hoge2" width="259px" height="194px"></canvas>
+  <h1>css background</h2>
+  <div id="hoge3"></div>
 </body>
 </html>
