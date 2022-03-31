@@ -14,7 +14,7 @@ window.onload = () => {
 
   const ctx: any = el.getContext("2d");
   const chara = new Image();
-  chara.src = "../img/sample_canvas.jpg";  // 画像のURLを指定
+  chara.src = "https://mochan01.github.io/banned_duplicate_test/img/sample_canvas.jpg";  // 画像のURLを指定
   chara.onload = () => {
     ctx.drawImage(chara, 0, 0);
   };
