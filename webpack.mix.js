@@ -4,10 +4,10 @@ const mix = require("laravel-mix");
 mix.setResourceRoot("");
 require("laravel-mix-ejs")
 
-mix.ts("./script/index.ts", "./dist/js/")
-.sass("./sass/index.scss", "./dist/css/")
-.ejs("./template/index.ejs", "./dist/")
-.copyDirectory('./img', './dist/img')
+mix.ts("./script/index.ts", "./docs/js/")
+.sass("./sass/index.scss", "./docs/css/")
+.ejs("./template/index.ejs", "./docs/")
+.copyDirectory('./img', './docs/img')
 .options({
   processCssUrls: false
 })
@@ -16,6 +16,6 @@ mix.ts("./script/index.ts", "./dist/js/")
 })
 .browserSync({
   files: "./**/*",
-  server: "./dist/",
+  server: "./docs/",
   proxy: false
 });
